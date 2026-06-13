@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  background-color: #FBF8F4;
+  color: #1B1B1F;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* default cursor — no custom-cursor gimmick */
+}
+
+/* Editorial card — calm, subtle, no neon glow */
+.card-glow {
+  background: #FFFFFF;
+  border: 1px solid #E9E3DA;
+  border-radius: 1rem;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.card-glow:hover {
+  border-color: #C9BEAE;
+  box-shadow: 0 8px 28px -18px rgba(27, 27, 31, 0.18);
+}
+
+/* Eyebrow label — quieter, used sparingly */
+.eyebrow {
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.68rem;
+  color: #B84D6A;
+  font-weight: 500;
+}
+
+/* Selection */
+::selection {
+  background: #F4D9E2;
+  color: #1B1B1F;
+}
+
+/* Scrollbar — subtle */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: #D9D2C5;
+  border-radius: 6px;
+  border: 2px solid #FBF8F4;
+}
+::-webkit-scrollbar-thumb:hover { background: #B84D6A; }
+
+/* Marquee container — duplicate content inside for seamless loop */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+/* Headline display utility */
+.display-serif {
+  font-family: 'Playfair Display', 'Lora', serif;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+}
+
+@media (max-width: 640px) {
+  .cursor-sparkle { display: none !important; }
+}
