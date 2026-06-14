@@ -2,16 +2,16 @@ import { motion } from 'framer-motion';
 
 const groups = [
   {
-    name: 'AI & Machine Learning',
-    pills: ['Machine Learning', 'Deep Learning', 'NLP', 'Generative AI', 'LLMs', 'RAG'],
+    name: 'Programming Languages',
+    pills: ['Python', 'Java', 'C++', 'C', 'JavaScript', 'SQL'],
   },
   {
-    name: 'Languages',
-    pills: ['Python', 'Java', 'C', 'C++', 'JavaScript', 'SQL'],
+    name: 'AI & Machine Learning',
+    pills: ['Generative AI', 'LLMs', 'RAG', 'Machine Learning', 'Deep Learning', 'NLP'],
   },
   {
     name: 'Libraries & Frameworks',
-    pills: ['NumPy', 'Pandas', 'Scikit-learn', 'LangChain', 'Spring Boot', 'Node.js', 'React.js'],
+    pills: ['Spring Boot', 'React.js', 'LangChain', 'Scikit-learn', 'Pandas', 'NumPy'],
   },
   {
     name: 'Databases',
@@ -19,7 +19,7 @@ const groups = [
   },
   {
     name: 'CS Fundamentals',
-    pills: ['DSA', 'OOPs', 'System Design', 'Computer Networks'],
+    pills: ['Data Structures & Algorithms', 'OOP', 'System Design', 'Computer Networks'],
   },
 ];
 
